@@ -27,7 +27,7 @@ body{
     top: 0;
     left: 0;
     z-index: -1;
-    animation: fadeIn .5s linear;
+    animation: fadeIn 1s linear;
 }
 .outerbox{
     text-align: center;
