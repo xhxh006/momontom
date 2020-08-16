@@ -27,7 +27,7 @@ function saveUsername(){
 }
 //랜덤 배경
 function genRendom(){
-    const n = Math.floor(Math.random() * 4)
+    const n = Math.floor(Math.random() * 5)
     return n
 }
 function paintImage(n){
