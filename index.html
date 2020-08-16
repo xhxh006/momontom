@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Momontom</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="src/styles.css">
+      </head>
+    <body>
+        <div class="outerbox">
+            <!-- 시계 -->
+            <div class="clock">
+                <span>00:00:00</span>
+            </div>
+            <!-- username persistance-->
+            <div class="username">
+                <h1>안녕하세요, 사용자님! 만나서 반갑습니다.</h1>
+                <form action="">
+                    <input type="text" placeholder="사용자 이름 지정">
+                </form>
+            </div>
+            <!-- 할일 -->
+            <div class="todo">
+                <div class="todo-list">
+                    <div class="pending">
+                        <span>할 일</span>
+                        <ul></ul>
+                    </div>
+                    <div class="finished">
+                        <span>완료</span>
+                        <ul></ul>
+                    </div>
+                </div>
+                <div class="todo-input">
+                    <form action="">
+                        <input type="text" placeholder="할 일 입력">
+                    </form>
+                </div>
+            </div>
+            <!-- 지역별 날씨? -->
+            <div class="weather"></div>
+        </div>
+        <!-- 랜덤 배경 -->
+        <script src="src/index.js"></script>
+        <script src="src/clock.js"></script>
+        <script src="src/todo.js"></script>
+        <script src="src/index.js"></script>
+        <script src="src/index.js"></script>
+    </body>
+</html>
