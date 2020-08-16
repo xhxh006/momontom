@@ -5,14 +5,9 @@ const ulFinished = toDoBox.querySelector(".finished").querySelector("ul")
 let pending = []
 let finished = []
 
-function useToDo(){
-
-    appendToDo()
-}
 function appendToDo(event){
     const input = toDoBox.querySelector("input")
     event.preventDefault()
-    console.log("appendtodo")
     const currentValue = input.value
     input.value = ""
     const newId = pending.length
@@ -79,7 +74,6 @@ function deleteTodo(event){
     const liId = parseInt(li.id)
     ul.removeChild(li)
     
-    console.log(ul === ulPending)
     if(ul === ulPending){
         clean = pending.filter(function(e){
             const status = (e.id !== liId)
@@ -126,7 +120,6 @@ function paint(obj){
     }
 }
 function loadToDo(){
-    console.log("load")
     const loadedPending = localStorage.getItem("pending")
     const loadedFinished = localStorage.getItem("finished")
     if(loadedPending !== null){
