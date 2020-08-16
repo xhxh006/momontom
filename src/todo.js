@@ -106,6 +106,7 @@ function paint(obj){
     span.innerText = obj.text;
     delBtn.innerText = "❌"
     delBtn.addEventListener("click", deleteTodo)
+    delBtn.classList.add("delBtn")
     finBtn.innerText = "✔"
     finBtn.addEventListener("click",moveTodo)
     
